@@ -1,0 +1,44 @@
+<html><head><link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+
+
+</head><body><dom-module id="app-main">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-tabs {
+      	background-color: #13171E;
+      	--paper-tabs-selection-bar-color: red;
+      }
+      paper-tab {
+      	color: white;
+      }
+      img.big {
+    	width: 50px;
+    	height: 50px;
+  	  }
+    </style>
+    <paper-tabs selected="1">
+    	<paper-tab disabled="">
+    		<img src="../images/logo.png" class="big">
+    	</paper-tab>
+  		<paper-tab>Accueil</paper-tab>
+  		<paper-tab>Exception</paper-tab>
+  		<paper-tab>Concept</paper-tab>
+  		<paper-tab>Projection</paper-tab>
+  		<paper-tab>Gamification</paper-tab>
+  		<paper-tab>Open Source</paper-tab>
+  		<paper-tab>Pol XXIe s</paper-tab>
+  		<paper-tab disabled="">
+    		<img src="../images/user.png" class="big">
+    	</paper-tab>
+	</paper-tabs>
+  </template>
+
+  <script>Polymer({is:"app-main"});</script>
+</dom-module>
+</body></html>
